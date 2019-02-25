@@ -1,0 +1,56 @@
+/* pages/order/order.wxss */
+
+.slide-image{height:100%; width:100%}
+
+
+.left{
+  float:left;
+  height:100%;
+  width: 19%;
+  display: inline-block;
+  background:#fff;
+  text-align:center;
+  border-right:1px solid #eee;
+  }
+.leftlist{
+  font-size:12px;
+  padding:10px;
+  }
+
+.right{
+  height:100%;
+  width: 80%;
+  display: inline-block;
+  background:#fff;
+  text-align:center;
+  }
+
+.line{
+  width:15px;
+  height:1px;
+  background:#ddd;
+  display:inline-block;
+  vertical-align:super;
+  margin:0 15px;
+}
+
+.li{ 
+  height:10%;
+  width:30%;
+  display:inline-block;
+  text-align:center;
+}
+
+.li image{width:60px;height:60px;}
+
+.li .name{
+  font-size:12px;
+  display:block;
+  color:#888;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+.title{padding:20px 0;}
+.yes{color: #f99;font-size: 14px;}

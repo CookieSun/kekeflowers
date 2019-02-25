@@ -1,0 +1,67 @@
+<!--pages/order/order.wxml-->
+<!-- <text>pages/order/order.wxml</text> -->
+
+	
+
+<swiper indicator-dots="{{true}}"
+  autoplay="{{true}}"
+  interval="{{1000}}"
+  duration="{{100}}"
+  circular="{{true}}"
+  height="400">
+	<block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item >
+      <image mode='aspectFill' src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<scroll-view class="left" scroll-y>   
+    <view wx:for="{{left}}" wx:key="{{index}}" class="leftlist {{index==_click?'yes':''}}" data-i="{{index}}" bindtap="tap">
+      {{item.txt}}
+    </view>
+  </scroll-view>
+
+<scroll-view class="right" scroll-y bindscroll="scroll" scroll-into-view="{{toView}}">
+    <view id="{{item.id}}"  wx:for="{{right}}" wx:key="{{index}}">
+
+      <view class="title">
+        <text class="line"></text>
+        {{item.txt}}
+        <text class="line"></text>
+      </view>  
+	  
+      <view class="btn-area">
+        <navigator
+          url="../detail/detail"
+          hover-class="navigator-hover"
+        >
+      <view class="li" wx:for="{{item.li}}" wx:key="{{index}}">
+		<view class="btn-area">
+		  <navigator
+		    url="../detail/detail"
+		    hover-class="navigator-hover"
+		  >
+        <image src="{{item.src}}"></image>
+		</navigator>
+		</view>
+        <text class="name">{{item.name}}</text>
+		 
+      </view>
+	  </navigator>
+	  </view>
+
+    </view>
+  </scroll-view>
+
+
+<!-- <view class="btn-area">
+  <navigator
+    url="../detail/detail"
+    hover-class="navigator-hover"
+  >
+    跳转到新页面
+  </navigator>
+  </view> -->
+

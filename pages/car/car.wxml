@@ -1,0 +1,31 @@
+<!--pages/car/car.wxml-->
+
+<!-- <block wx:for="{{list}}" wx:key="{{index}}">
+<icon class="icon" type="{{item.select}}" size="26" data-index="{{index}}" data-select="{{item.select}}" bindtap="change"/>
+</block> -->
+<view class="num-box">
+	<block wx:for="{{list}}" wx:key="{{index}}">
+	
+    <view class="btn-groups">
+	<icon class="icon" type="{{item.select}}" size="26" data-index="{{index}}" data-select="{{item.select}}" bindtap="change"/>	
+	<image class="img" mode='aspectFill' src="{{item.url}}" />
+	<view class="name">
+	    <text>{{item.name}}</text>
+		<text>{{item.style}}</text>
+		<text>{{item.price}}</text>
+	</view>
+		<view class="anniu">
+        <button class="goods-btn btn-minus" data-index="{{index}}" data-num="{{item.num}}" bindtap="subtraction"> - </button>
+        <view class="num">{{item.num}}</view>
+        <button class="goods-btn btn-add" data-index="{{index}}" data-num="{{item.num}}" bindtap="addtion"> + </button>
+        </view>
+	</view>
+	
+	<view class="count">
+		<icon class="icons" type="{{item.select}}" size="26" bindtap="allSelect"/>
+		<view class="price" bindtap="count">{{count()}}</view>
+		<view class="jiesuan">结算</view>
+	</view>
+	</block>
+</view>
+

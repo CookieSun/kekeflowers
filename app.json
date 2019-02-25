@@ -1,0 +1,43 @@
+{
+  "pages":[
+   
+    
+		"pages/order/order",
+		"pages/car/car",
+		"pages/profile/profile",
+		"pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#FFC1E0",
+    "navigationBarTitleText": "饼干外卖",
+	  "backgroundColor": "#ccc",
+    "navigationBarTextStyle":"black"
+  },
+	"tabBar": {
+	  "color": "#000",
+	  "selectedColor": "#fff",
+	  "borderStyle": "white",
+	  "backgroundColor": "#FFC1E0",
+	  "list": [
+	    {
+	      "text": "订购",
+	      "pagePath": "pages/order/order",
+	      "iconPath": "images/caomei.png",
+	      "selectedIconPath": "images/quanquan.png"
+	    },
+	    {
+	      "text": "购物车",
+	      "pagePath": "pages/car/car",
+	      "iconPath": "images/niunai.png",
+	      "selectedIconPath": "images/quanquan.png"
+	    },
+	    {
+	      "text": "我的",
+	      "pagePath": "pages/profile/profile",
+	      "iconPath": "images/sweet.png",
+	      "selectedIconPath": "images/quanquan.png"
+	    }
+	  ]
+	}
+}

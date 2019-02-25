@@ -1,0 +1,57 @@
+/* pages/car/car.wxss */
+
+
+
+.btn-groups{
+	width:100%;overflow:hidden;border:2rpx #AAAAAA solid;
+}
+.icon{
+	float:left;margin-top:55rpx;
+}
+.img{
+	height:140rpx;width:140rpx;float:left;border:2rpx #FF9999 solid;margin:10rpx 10rpx 10rpx 10rpx;
+}
+.name{
+	float:left;
+}
+text{
+	display:block;color:#888888;font-size:28rpx;margin-right:10rpx;
+}
+
+
+
+
+.anniu{
+	height:100rpx;width:300rpx;float:right;
+}
+.btn-minus{
+	height:80rpx;width:80rpx;float:left;line-height:30px;
+}
+.num{
+	height:80rpx;width:80rpx;float:left;line-height:30px;text-align:center;
+}
+.btn-add{
+	height:80rpx;width:80rpx;float:left;line-height:30px;
+}
+
+.count{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100rpx;
+  
+}
+.icons{
+	margin-top:15rpx;margin-left:80%;
+}
+.price{float:right;}
+.jiesuan{
+	height:100%;margin-left:10rpx;background:#FF9999;font-size:40rpx;text-align:center;line-height:100rpx;
+}
